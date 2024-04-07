@@ -1,0 +1,16 @@
+.sidebar {
+  background-color: #242424;
+  color: white;
+}
+
+.div-logo {
+  padding: 0;
+  margin-left: -10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo-mario {
+  border-radius: 25px;
+  background-color: blue;
+}

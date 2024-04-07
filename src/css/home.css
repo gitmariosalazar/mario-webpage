@@ -1,0 +1,10 @@
+.lg-m {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+img {
+  max-width: 100%; /* Para asegurar que la imagen no exceda el contenedor */
+  max-height: 100%; /* Para asegurar que la imagen no exceda el contenedor */
+}
