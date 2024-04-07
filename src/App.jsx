@@ -3,6 +3,7 @@ import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 import { StyleClass } from "primereact/StyleClass";
+
 import "./css/sidebar.css";
 import avatar_logo from "./img/LogoMario.png";
 import mario from "./img/MarioSalazar.jpeg";
