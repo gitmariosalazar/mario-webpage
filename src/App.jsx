@@ -4,6 +4,7 @@ import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 import { PanelMenu } from "primereact/panelmenu";
 import { Badge } from "primereact/badge";
+import { SpeedDial } from "primereact/speeddial";
 import "./css/sidebar.css";
 import avatar_logo from "./img/LogoMario.png";
 import mario from "./img/MarioSalazar.jpeg";
@@ -28,6 +29,29 @@ export default function HeadlessDemo() {
       )}
     </a>
   );
+
+  const items2 = [
+    {
+      label: "Add",
+      icon: "pi pi-pencil",
+    },
+    {
+      label: "Update",
+      icon: "pi pi-refresh",
+    },
+    {
+      label: "Delete",
+      icon: "pi pi-trash",
+    },
+    {
+      label: "Upload",
+      icon: "pi pi-upload",
+    },
+    {
+      label: "React Website",
+      icon: "pi pi-external-link",
+    },
+  ];
 
   const items = [
     {
@@ -150,10 +174,32 @@ export default function HeadlessDemo() {
                 </div>
                 <div className="mt-auto">
                   <hr className="mb-3 mx-3 border-top-3 border-none surface-border" />
-                  <a className="m-3 flex align-items-center cursor-pointer p-3 gap-2 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                    <Avatar image={mario} shape="circle" />
-                    <span className="font-bold">Mario Salazar</span>
-                  </a>
+
+                  <div className="flex align-items-center justify-content-between px-4 pt-3 flex-shrink-0">
+                    <span className="inline-flex align-items-center gap-2">
+                      <a className="m-3 flex align-items-center cursor-pointer p-3 gap-2 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
+                        <Avatar image={mario} shape="circle" tooltip="Hola" />
+                        <span className="font-bold">Mario Salazar</span>
+                      </a>
+                    </span>
+
+                    <span>
+                      <div className="card">
+                        <div>
+                          <SpeedDial
+                            model={items2}
+                            radius={80}
+                            type="semi-circle"
+                            direction="up"
+                            style={{
+                              left: "calc(100% - 2rem)",
+                              bottom: "calc(5% - 2rem)",
+                            }}
+                          />
+                        </div>
+                      </div>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
