@@ -137,8 +137,8 @@ export default function HeadlessDemo() {
           <div className="min-h-screen flex relative lg:static surface-ground">
             <div
               id="app-sidebar-2"
-              className="surface-section h-screen hidden lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none"
-              style={{ width: "280px" }}
+              className="surface-section h-screen lg:block flex-shrink-0 absolute lg:static left-0 top-0 z-1 border-right-1 surface-border select-none"
+              style={{ width: "290px" }}
             >
               <div className="flex flex-column h-full sidebar">
                 <div className="flex align-items-center justify-content-between px-4 pt-3 flex-shrink-0">
@@ -192,8 +192,8 @@ export default function HeadlessDemo() {
                             type="semi-circle"
                             direction="up"
                             style={{
-                              left: "calc(100% - 2rem)",
-                              bottom: "calc(5% - 2rem)",
+                              left: "calc(85% - 2rem)",
+                              bottom: "calc(5% - 1rem)",
                             }}
                           />
                         </div>
@@ -206,12 +206,7 @@ export default function HeadlessDemo() {
           </div>
         )}
       ></Sidebar>
-      <Button
-        icon="pi pi-align-justify"
-        tooltip="Open Menu"
-        tooltipOptions={{ position: "mouse" }}
-        onClick={() => setVisible(true)}
-      />
+      <Button icon="pi pi-align-justify" onClick={() => setVisible(true)} />
     </div>
   );
 }
